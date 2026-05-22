@@ -38,9 +38,6 @@ class script(object):
 ➤ Drama Name + S01
 (Example: Money Heist S01)
 
-📌 For Hindi Content:
-➤ Drama Name + Hindi
-
 📌 For Movies:
 ➤ Movie Name + Year
 (Example: Joker 2019)
