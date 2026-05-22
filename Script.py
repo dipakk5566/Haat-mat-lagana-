@@ -311,7 +311,7 @@ Nᴀᴍᴇ : {}
 
 Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
     
-    CAPTION = """<b><a href="https://t.me/Movies_4ug">{file_name}</a></b>\n\n𝙐𝙋𝙇𝙊𝘼𝘿𝙀𝘿:➥ <a href="https://t.me/movies_4uz">「𝙈𝙊𝙑𝙄𝙀𝙎_4𝙐」</a></b>"""
+    CAPTION = """<b><a href="https://t.me/movies_4uz">{file_name}</a></b>\n\n𝙐𝙋𝙇𝙊𝘼𝘿𝙀𝘿:➥ <a href="https://t.me/movies4u_backup">「𝙈𝙊𝙑𝙄𝙀𝙎_4𝙐」</a></b>"""
 
     
     MOVIE_UPDATE_NOTIFY_TXT = """
