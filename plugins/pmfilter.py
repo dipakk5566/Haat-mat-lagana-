@@ -1509,8 +1509,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('❃ ɢʀᴏᴜᴘ ❃', callback_data='https://t.me/movies_4uz'),
-            InlineKeyboardButton ('⫹⫺ ᴄʜᴀɴɴᴇʟ ⫹⫺', callback_data='https://t.me/movies4u_backup'),
+            InlineKeyboardButton('❃ ɢʀᴏᴜᴘ ❃', url='https://t.me/movies_4uz'),
+            InlineKeyboardButton ('⫹⫺ ᴄʜᴀɴɴᴇʟ ⫹⫺', url='https://t.me/movies4u_backup'),
         ],[
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
         ]]
