@@ -32,19 +32,25 @@ class script(object):
     HELP_TXT = """<b>
     
 ✨ How to Request Movies & Dramas 🎬
+
 1️⃣ Pehle Google par correct naam check karo
 2️⃣ Phir group me uska naam send karo
+
 📌 For Series:
 ➤ Drama Name + S01
 (Example: Money Heist S01)
+
 📌 For Hindi Content:
 ➤ Drama Name + Hindi
+
 📌 For Movies:
 ➤ Movie Name + Year
 (Example: Joker 2019)
+
 ❗ Agar movie/drama na mile:
 ➤ #request movie_name
 (Example: #request Avengers Endgame)
+
 🚀 Simple rakho, correct format use karo
 </b>"""
 
