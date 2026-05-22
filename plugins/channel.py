@@ -370,7 +370,7 @@ async def send_movie_update(bot, base_name):
             text = generate_movie_message(movie_doc, base_name)
             buttons = InlineKeyboardMarkup([[
                 InlineKeyboardButton(
-                    'ɢᴇᴛ ғɪʟᴇs',
+                    '✦ 𝗖𝗹𝗶𝗰𝗸 𝗛𝗲𝗿𝗲 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 ✦',
                     url=f"https://t.me/{temp.U_NAME}?start=getfile-{base_name.replace(' ', '-')}"
                 )
             ]])
@@ -419,7 +419,7 @@ async def update_movie_message(bot, base_name):
         text = generate_movie_message(movie_doc, base_name)
         buttons = InlineKeyboardMarkup([[
             InlineKeyboardButton(
-                'ɢᴇᴛ ғɪʟᴇs',
+                '✦ 𝗖𝗹𝗶𝗰𝗸 𝗛𝗲𝗿𝗲 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 ✦',
                 url=f"https://t.me/{temp.U_NAME}?start=getfile-{base_name.replace(' ', '-')}"
             )
         ]])
