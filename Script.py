@@ -513,7 +513,7 @@ This Is An Open-Source Project. You Can Use It Freely, But Selling The Source Co
 
 🫧 ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪꜰɪᴇᴅ ɴᴏᴡ, ᴘʟᴇᴀꜱᴇ ᴄʟɪᴄᴋ ᴏɴ ᴠᴇʀɪꜰʏ .
 
-#ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ:- 📃
+#ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ:- 🔖
 
 🎬 ɢᴇᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ɴᴏᴡ — ᴊᴜꜱᴛ ᴄᴏᴍᴘʟᴇᴛᴇ ᴛʜᴇ ꜱᴛᴇᴘ ʙᴇʟᴏᴡ 👇.</i></b>"""
     
@@ -528,7 +528,7 @@ This Is An Open-Source Project. You Can Use It Freely, But Selling The Source Co
 
 🫧 ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪꜰɪᴇᴅ ɴᴏᴡ, ᴘʟᴇᴀꜱᴇ ᴄʟɪᴄᴋ ᴏɴ ᴠᴇʀɪꜰʏ .
 
-#ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ:- 📃
+#ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ:- 🔖
 
 🎬 ɢᴇᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ɴᴏᴡ — ᴊᴜꜱᴛ ᴄᴏᴍᴘʟᴇᴛᴇ ᴛʜᴇ ꜱᴛᴇᴘ ʙᴇʟᴏᴡ 👇.</i></b>"""
 
@@ -542,7 +542,7 @@ This Is An Open-Source Project. You Can Use It Freely, But Selling The Source Co
 
 🫧 ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪꜰɪᴇᴅ ɴᴏᴡ, ᴘʟᴇᴀꜱᴇ ᴄʟɪᴄᴋ ᴏɴ ᴠᴇʀɪꜰʏ .
 
-#ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ:- 📃
+#ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ:- 🔖
 
 🎬 ɢᴇᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ɴᴏᴡ — ᴊᴜꜱᴛ ᴄᴏᴍᴘʟᴇᴛᴇ ᴛʜᴇ ꜱᴛᴇᴘ ʙᴇʟᴏᴡ 👇.</i></b>"""
 
