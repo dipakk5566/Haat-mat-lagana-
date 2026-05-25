@@ -116,14 +116,14 @@ SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "exe.io") # Shortener web
 SHORTENER_API3 = environ.get("SHORTENER_API3", "e9d72a6a9b99c5c048ae7db10a18139aeda95d13")  
 SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "exe.io") # Shortener website for third website
 
-TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "120")) # Time gap for two-step verification in seconds (default: 20 minutes)
-THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "120"))    
+TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "90")) # Time gap for two-step verification in seconds (default: 20 minutes)
+THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "90"))    
 
 # ============================
 # Channel & Group Links Configuration
 # ============================
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/movies_4uz') # Group link for the bot
-OWNER_LNK = environ.get('OWNER_LNK', 'https://telegram.me/aloneboy_ds') # Owner link for the bot
+OWNER_LNK = environ.get('OWNER_LNK', 'https://telegram.me/admnsprt_bot') # Owner link for the bot
 UPDATE_CHNL_LNK = environ.get('UPDATE_CHNL_LNK', 'https://t.me/movies4u_backup') # Update channel link for the bot
 
 # ============================
