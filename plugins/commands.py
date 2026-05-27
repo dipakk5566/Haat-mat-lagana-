@@ -1483,3 +1483,35 @@ async def clean_groups_handler(client, message):
         except Exception as e:
             print(f'Error in clean_groups loop: {e}')
     await msg.edit(f'**Clean Groups Complete**\n\nTotal Processed: {processed}\nDeleted: {deleted_count}')
+from motor.motor_asyncio import AsyncIOMotorClient       
+@Client.on_message(filters.command("cleandb") & filters.user(ADMINS))
+async def clean_db_command(client, message):
+    
+    await message.reply_text("🧹 Cleaning database... Please wait ⏳")
+
+    try:
+        # Connect to your existing MongoDB
+        mongo = AsyncIOMotorClient(DATABASE_URI)
+        db = mongo[DATABASE_NAME]
+        collection = db["rrbz"]
+
+        # Fields to remove
+        fields_to_unset = {
+            "file_ref": "",
+            "file_type": "",
+            "mime_type": "",
+            "caption": ""
+        }
+
+        # Run cleanup
+        result = await collection.update_many({}, {"$unset": fields_to_unset})
+
+        await message.reply_text(
+            f"✅ <b>Cleanup Complete!</b>\n\n"
+            f"🗃️ Collection: <code>rrbz</code>\n"
+            f"📦 Matched Docs: <code>{result.matched_count}</code>\n"
+            f"🧹 Modified Docs: <code>{result.modified_count}</code>"
+        )
+
+    except Exception as e:
+        await message.reply_text(f"❌ <b>Error while cleaning DB:</b>\n<code>{e}</code>")
