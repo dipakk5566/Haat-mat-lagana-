@@ -2012,13 +2012,23 @@ async def advantage_spell_chok(client, message):
         movies = await get_poster(search, bulk=True)
     except Exception as e:
         logger.exception("get_poster failed for query=%s: %s", query, e)
+        buttons = [[
+            InlineKeyboardButton("📇 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📇", url="https://t.me/YourChannelLink")
+        ]]
+        k = await message.reply_text(
+            text="""<b>🚫 Movie Not Found</b>
+
+<i>𝗧𝗵𝗶𝘀 𝗺𝗼𝘃𝗶𝗲 𝗶𝘀𝗻'𝘁 𝗮𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗿𝗶𝗴𝗵𝘁 𝗻𝗼𝘄 𝗶𝗻 𝗼𝘂𝗿 𝗗𝗮𝘁𝗮𝗯𝗮𝘀𝗲.</i>
+
+🎬 <b>𝗚𝗲𝘁 𝗶𝗻𝘀𝘁𝗮𝗻𝘁 𝘂𝗽𝗱𝗮𝘁𝗲𝘀?</b>
+𝗝𝗼𝗶𝗻 𝗼𝘂𝗿 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 𝗯𝗲𝗹𝗼𝘄. 𝗬𝗼𝘂'𝗹𝗹 𝗴𝗲𝘁 𝗻𝗼𝘁𝗶𝗳𝗶𝗲𝗱 𝗮𝘀 𝘀𝗼𝗼𝗻 𝗮𝘀 𝘄𝗲 𝘂𝗽𝗹𝗼𝗮𝗱 𝗶𝘁!""",
+            reply_markup=InlineKeyboardMarkup(buttons)
+        )
+        await asyncio.sleep(60)
         try:
-            k = await message.reply(script.I_CUDNT.format(message.from_user.mention))
-            await asyncio.sleep(60)
-            try:
-                await k.delete()
-            except Exception:
-                pass
+            await k.delete()
+        except Exception:
+            pass
         except Exception:
             pass
         try:
