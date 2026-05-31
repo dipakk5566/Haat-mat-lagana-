@@ -1006,14 +1006,11 @@ async def get_cap(settings, remaining_seconds, files, query, total_results, sear
                         **locals()
                     )
                     
-                    for idx, file in enumerate(files, start=offset+1):
-                        cap += (
-                            f"<b>{idx}. "
-                            f"<a href='https://telegram.me/{temp.U_NAME}"
-                            f"?start=file_{query.message.chat.id}_{file.file_id}'>"
-                            f"[{get_size(file.file_size)}] "
-                            f"{clean_filename(file.file_name)}\n\n"
-                            f"</a></b>"
+                    for idx, file in enumerate(files[offset:offset+6], start=offset+1):
+    file_link = f"https://telegram.me/{temp.U_NAME}?start=file_{query.message.chat.id}_{file.file_id}"
+    file_name = clean_filename(file.file_name)
+    file_size = get_size(file.file_size)
+    cap += f"<b>\n🎬 {idx}. <a href='{file_link}'>{file_name}</a>\n╰─➤ {file_size}\n</b>\n"
                         )
                 else:
                     if ULTRA_FAST_MODE:
@@ -1032,14 +1029,11 @@ async def get_cap(settings, remaining_seconds, files, query, total_results, sear
                             f"⚜️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ :⚡ {query.message.chat.title or temp.B_LINK or 'ᴅʀᴇᴀᴍxʙᴏᴛᴢ'}\n</b>"
                         )
                     cap += "\n\n<u>Your Requested Files Are Here</u> \n\n</b>"
-                    for idx, file in enumerate(files, start=offset + 1):
-                        cap += (
-                            f"<b>{idx}. "
-                            f"<a href='https://telegram.me/{temp.U_NAME}"
-                            f"?start=file_{query.message.chat.id}_{file.file_id}'>"
-                            f"[{get_size(file.file_size)}] "
-                            f"{clean_filename(file.file_name)}\n\n"
-                            f"</a></b>"
+                    for idx, file in enumerate(files[offset:offset+6], start=offset+1):
+    file_link = f"https://telegram.me/{temp.U_NAME}?start=file_{query.message.chat.id}_{file.file_id}"
+    file_name = clean_filename(file.file_name)
+    file_size = get_size(file.file_size)
+    cap += f"<b>\n🎬 {idx}. <a href='{file_link}'>{file_name}</a>\n╰─➤ {file_size}\n</b>\n"
                         )
 
         else:
@@ -1059,14 +1053,11 @@ async def get_cap(settings, remaining_seconds, files, query, total_results, sear
                 )
 
             cap += "\n\n<u>Your Requested Files Are Here</u>\n\n</b>"
-            for idx, file in enumerate(files, start=offset):
-                        cap += (
-                            f"<b>{idx}. "
-                            f"<a href='https://telegram.me/{temp.U_NAME}"
-                            f"?start=file_{query.message.chat.id}_{file.file_id}'>"
-                            f"[{get_size(file.file_size)}] "
-                            f"{clean_filename(file.file_name)}\n\n"
-                            f"</a></b>"
+            for idx, file in enumerate(files[offset:offset+6], start=offset+1):
+    file_link = f"https://telegram.me/{temp.U_NAME}?start=file_{query.message.chat.id}_{file.file_id}"
+    file_name = clean_filename(file.file_name)
+    file_size = get_size(file.file_size)
+    cap += f"<b>\n🎬 {idx}. <a href='{file_link}'>{file_name}</a>\n╰─➤ {file_size}\n</b>\n"
                         )
         return cap
     except Exception as e:
