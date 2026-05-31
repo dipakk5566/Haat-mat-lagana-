@@ -318,7 +318,7 @@ async def next_page(bot, query):
                     except MessageNotModified:
                         pass
             else:
-                cap = await get_cap(settings, remaining_seconds, files, query, total, dreamx_title, offset+1)
+                cap = await get_cap(settings, remaining_seconds, files, query, total, dreamx_title, offset)
                 await query.message.edit_text(text=cap, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True, parse_mode=enums.ParseMode.HTML)
         except MessageNotModified:
             pass
